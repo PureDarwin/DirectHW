@@ -1,0 +1,20 @@
+Index: DirectHW.xcodeproj/project.pbxproj
+===================================================================
+--- DirectHW.xcodeproj/project.pbxproj	(revision 110)
++++ DirectHW.xcodeproj/project.pbxproj	(working copy)
+@@ -202,7 +202,6 @@
+ 			isa = XCBuildConfiguration;
+ 			buildSettings = {
+ 				ARCHS = (
+-					x86_64,
+ 					i386,
+ 				);
+ 				COPY_PHASE_STRIP = NO;
+@@ -228,7 +227,6 @@
+ 			isa = XCBuildConfiguration;
+ 			buildSettings = {
+ 				ARCHS = (
+-					x86_64,
+ 					i386,
+ 				);
+ 				COPY_PHASE_STRIP = YES;

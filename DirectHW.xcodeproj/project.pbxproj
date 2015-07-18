@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D9932DD0D0F97EF00760F43 /* DirectHW.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D9932B30D0F95DD00760F43 /* DirectHW.cpp */; };
+		FDC4F2BC0E923E0C0006B2A5 /* DirectHW.h in Headers */ = {isa = PBXBuildFile; fileRef = FD12A6710E9235DB004BBD7B /* DirectHW.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDC4F2BD0E923E100006B2A5 /* DirectHW.c in Sources */ = {isa = PBXBuildFile; fileRef = FD12A6700E9235DB004BBD7B /* DirectHW.c */; };
+		FDC4F2BF0E923E2B0006B2A5 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC4F2BE0E923E2B0006B2A5 /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D9932B30D0F95DD00760F43 /* DirectHW.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DirectHW.cpp; sourceTree = "<group>"; };
+		5D9932B40D0F95DD00760F43 /* DirectHW.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectHW.hpp; sourceTree = "<group>"; };
+		5D9932D60D0F97D000760F43 /* DirectHW.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DirectHW.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9932D70D0F97D000760F43 /* DirectHW-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DirectHW-Info.plist"; sourceTree = "<group>"; };
+		FD12A6700E9235DB004BBD7B /* DirectHW.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DirectHW.c; sourceTree = "<group>"; };
+		FD12A6710E9235DB004BBD7B /* DirectHW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectHW.h; sourceTree = "<group>"; };
+		FDC4F1CB0E923CB30006B2A5 /* DirectHW-Framework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DirectHW-Framework-Info.plist"; sourceTree = "<group>"; };
+		FDC4F2B50E923DF00006B2A5 /* DirectHW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DirectHW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDC4F2BE0E923E2B0006B2A5 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D9932D40D0F97D000760F43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDC4F2B30E923DF00006B2A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC4F2BF0E923E2B0006B2A5 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D9932890D0F94EE00760F43 = {
+			isa = PBXGroup;
+			children = (
+				FDC4F2BE0E923E2B0006B2A5 /* IOKit.framework */,
+				5D9932940D0F94F500760F43 /* Source */,
+				5D99329C0D0F952400760F43 /* Products */,
+				5D9932D70D0F97D000760F43 /* DirectHW-Info.plist */,
+				FDC4F1CB0E923CB30006B2A5 /* DirectHW-Framework-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		5D9932940D0F94F500760F43 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FD12A6700E9235DB004BBD7B /* DirectHW.c */,
+				FD12A6710E9235DB004BBD7B /* DirectHW.h */,
+				5D9932B30D0F95DD00760F43 /* DirectHW.cpp */,
+				5D9932B40D0F95DD00760F43 /* DirectHW.hpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		5D99329C0D0F952400760F43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D9932D60D0F97D000760F43 /* DirectHW.kext */,
+				FDC4F2B50E923DF00006B2A5 /* DirectHW.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FDC4F2B00E923DF00006B2A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC4F2BC0E923E0C0006B2A5 /* DirectHW.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5D9932D50D0F97D000760F43 /* KEXT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D9932DB0D0F97D100760F43 /* Build configuration list for PBXNativeTarget "KEXT" */;
+			buildPhases = (
+				5D9932D20D0F97D000760F43 /* Sources */,
+				5D9932D30D0F97D000760F43 /* Resources */,
+				5D9932D40D0F97D000760F43 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KEXT;
+			productName = DirectHW;
+			productReference = 5D9932D60D0F97D000760F43 /* DirectHW.kext */;
+			productType = "com.apple.product-type.kernel-extension.iokit";
+		};
+		FDC4F2B40E923DF00006B2A5 /* DirectHW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDC4F2C00E923E2B0006B2A5 /* Build configuration list for PBXNativeTarget "DirectHW" */;
+			buildPhases = (
+				FDC4F2B00E923DF00006B2A5 /* Headers */,
+				FDC4F2B10E923DF00006B2A5 /* Resources */,
+				FDC4F2B20E923DF00006B2A5 /* Sources */,
+				FDC4F2B30E923DF00006B2A5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DirectHW;
+			productName = DirectHW;
+			productReference = FDC4F2B50E923DF00006B2A5 /* DirectHW.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D99328B0D0F94EE00760F43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = 5D99328E0D0F94EE00760F43 /* Build configuration list for PBXProject "DirectHW" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5D9932890D0F94EE00760F43;
+			productRefGroup = 5D99329C0D0F952400760F43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D9932D50D0F97D000760F43 /* KEXT */,
+				FDC4F2B40E923DF00006B2A5 /* DirectHW */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D9932D30D0F97D000760F43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDC4F2B10E923DF00006B2A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D9932D20D0F97D000760F43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D9932DD0D0F97EF00760F43 /* DirectHW.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDC4F2B20E923DF00006B2A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC4F2BD0E923E100006B2A5 /* DirectHW.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5D99328C0D0F94EE00760F43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				COPY_PHASE_STRIP = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIPFLAGS = "-no_uuid";
+				VALID_ARCHS = i386;
+			};
+			name = Debug;
+		};
+		5D99328D0D0F94EE00760F43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = i386;
+				COPY_PHASE_STRIP = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIPFLAGS = "-no_uuid";
+				VALID_ARCHS = i386;
+			};
+			name = Release;
+		};
+		5D9932D90D0F97D100760F43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					i386,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "DirectHW-Info.plist";
+				INSTALL_GROUP = wheel;
+				INSTALL_OWNER = root;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.coresystems.driver.DirectHW;
+				MODULE_VERSION = 1.0;
+				PRODUCT_NAME = DirectHW;
+				VALID_ARCHS = "i386 x86_64";
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		5D9932DA0D0F97D100760F43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					i386,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = "DirectHW-Info.plist";
+				INSTALL_GROUP = wheel;
+				INSTALL_OWNER = root;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.coresystems.driver.DirectHW;
+				MODULE_VERSION = 1.0;
+				PRODUCT_NAME = DirectHW;
+				VALID_ARCHS = "i386 x86_64";
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		FDC4F2B60E923DF00006B2A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					i386,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "DirectHW-Framework-Info.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = DirectHW;
+				VALID_ARCHS = "i386 x86_64";
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		FDC4F2B70E923DF00006B2A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					i386,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "DirectHW-Framework-Info.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = DirectHW;
+				VALID_ARCHS = "i386 x86_64";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D99328E0D0F94EE00760F43 /* Build configuration list for PBXProject "DirectHW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D99328C0D0F94EE00760F43 /* Debug */,
+				5D99328D0D0F94EE00760F43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D9932DB0D0F97D100760F43 /* Build configuration list for PBXNativeTarget "KEXT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D9932D90D0F97D100760F43 /* Debug */,
+				5D9932DA0D0F97D100760F43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDC4F2C00E923E2B0006B2A5 /* Build configuration list for PBXNativeTarget "DirectHW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDC4F2B60E923DF00006B2A5 /* Debug */,
+				FDC4F2B70E923DF00006B2A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D99328B0D0F94EE00760F43 /* Project object */;
+}

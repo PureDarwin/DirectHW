@@ -1,0 +1,29 @@
+<pkgref spec="1.12" uuid="9EEC00E4-527A-400E-A366-6F0D0ABB0D19">
+    <config>
+        <identifier>com.coresystems.directhw.DirectHW.pkg</identifier>
+        <version>1.0</version>
+        <description></description>
+        <post-install type="none"/>
+        <requireAuthorization/>
+        <installFrom relative="true" mod="true">build/DirectHW</installFrom>
+        <installTo>/</installTo>
+        <flags>
+            <followSymbolicLinks/>
+        </flags>
+        <packageStore type="internal"></packageStore>
+        <mod>installFrom.isRelativeType</mod>
+        <mod>installFrom.path</mod>
+        <mod>parent</mod>
+        <mod>installTo</mod>
+    </config>
+    <contents>
+        <file-list>01directhw-contents.xml</file-list>
+        <component id="com.coresystems.driver.DirectHW" path="build/DirectHW/System/Library/Extensions/DirectHW.kext" version="1.0"/>
+        <component id="com.coresystems.DirectHW" path="build/DirectHW/System/Library/Frameworks/DirectHW.framework" version="1.0"/>
+        <filter>/CVS$</filter>
+        <filter>/\.svn$</filter>
+        <filter>/\.cvsignore$</filter>
+        <filter>/\.cvspass$</filter>
+        <filter>/\.DS_Store$</filter>
+    </contents>
+</pkgref>

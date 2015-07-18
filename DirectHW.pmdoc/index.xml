@@ -1,0 +1,58 @@
+<pkmkdoc spec="1.12">
+    <properties>
+        <title>DirectHW</title>
+        <build>DirectHW.pkg</build>
+        <organization>com.coresystems</organization>
+        <userSees ui="easy"/>
+        <min-target os="3"/>
+        <domain system="true"/>
+    </properties>
+    <distribution>
+        <versions min-spec="1.000000"/>
+        <scripts>
+	    function CheckHardwareCompatibility() {
+                if (system.sysctl('hw.machine') == 'i386') {
+                    return true;
+                }
+            
+                if (system.sysctl('hw.machine') == 'x86_64') {
+                    return true;
+                }
+            
+                return false;
+            }
+        </scripts>
+    </distribution>
+    <contents>
+        <choice title="DirectHW" id="choice2" starts_selected="true" starts_enabled="true" starts_hidden="false">
+            <pkgref id="com.coresystems.directhw.DirectHW.pkg"/>
+        </choice>
+    </contents>
+    <resources bg-scale="none" bg-align="bottomleft">
+        <locale lang="en">
+            <resource relative="true" mod="true" type="background">installer.png</resource>
+            <resource relative="true" mod="true" type="license">Copying.rtf</resource>
+            <resource relative="true" mod="true" type="welcome">Welcome.rtf</resource>
+        </locale>
+    </resources>
+    <requirements>
+        <requirement id="java" operator="eq" value="true">
+            <argument>CheckHardwareCompatibility()</argument>
+            <message-title>Unsupported Architecture</message-title>
+            <message>DirectHW is only supported on Intel® based Apple systems.</message>
+        </requirement>
+    </requirements>
+    <flags/>
+    <postinstall>
+        <action id="com.apple.packagemaker.actions.loadkext">
+            <value>com.coresystems.driver.DirectHW</value>
+	    <type>component</type>
+        </action>
+    </postinstall>
+    <item type="file">01directhw.xml</item>
+    <mod>properties.title</mod>
+    <mod>postinstallActions.actions</mod>
+    <mod>description</mod>
+    <mod>properties.anywhereDomain</mod>
+    <mod>properties.systemDomain</mod>
+</pkmkdoc>
